@@ -14,7 +14,12 @@
       crossorigin="anonymous"
     /> -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
     <!-- google Montserrat  font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,16 +36,11 @@
   <body>
     <header></header>
     <main class="main">
-      <!-- <div class="search-field">
-        <div class="search-box">
-          <input id="input-field" class="search-field" type="text" />
-          <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false" autocomplete="off" id="search-btn" onclick="loadProducts()">Search</button>
-        </div>
-      </div> -->
-      <div class="search">
+      <!-- search bar -->
+      <div id="search-bar" class="search">
         <form class="search-form">
           <input type="text" placeholder="Search for clothings.." />
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Search" />
         </form>
       </div>
 
@@ -93,7 +93,9 @@
               </tbody>
             </table>
             <div class="parces text-center">
-              <button class="btn btn-primary text-center">Buy Now</button>
+              <button class="btn btn-primary text-center" id="buy-btn">
+                Buy Now
+              </button>
             </div>
           </div>
         </div>
